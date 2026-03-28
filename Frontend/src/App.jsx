@@ -88,14 +88,18 @@ function App() {
           <section id="profile-section" className="section-container">
             <div className="profile-container">
               <div className="profile-image-wrapper">
-                <img 
-                  src={hatsuneImage} 
-                  alt="初音ちゃん" 
-                  className="profile-image"
-                  onLoad={() => setImageLoaded(true)}
-                  onError={() => setImageLoaded(false)}
-                />
-                <div className="image-glow"></div>
+                {false && (
+                  <>
+                    <img 
+                      src={hatsuneImage} 
+                      alt="初音ちゃん" 
+                      className="profile-image"
+                      onLoad={() => setImageLoaded(true)}
+                      onError={() => setImageLoaded(false)}
+                    />
+                    <div className="image-glow"></div>
+                  </>
+                )}
                 {!imageLoaded && (
                   <div className="profile-placeholder">
                     初音ちゃんの写真<br />
