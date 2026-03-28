@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
+import hatsuneImage from '../image/hatsune-cha.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
   const [activeTab, setActiveTab] = useState('home')
+  const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
     <div className="app-container">
@@ -87,11 +89,19 @@ function App() {
             <div className="profile-container">
               <div className="profile-image-wrapper">
                 <img 
-                  src="/hatsu-chan.jpg" 
+                  src={hatsuneImage} 
                   alt="初音ちゃん" 
                   className="profile-image"
+                  onLoad={() => setImageLoaded(true)}
+                  onError={() => setImageLoaded(false)}
                 />
                 <div className="image-glow"></div>
+                {!imageLoaded && (
+                  <div className="profile-placeholder">
+                    初音ちゃんの写真<br />
+                    <span className="placeholder-emoji">💙</span>
+                  </div>
+                )}
               </div>
 
               <div className="profile-info">
