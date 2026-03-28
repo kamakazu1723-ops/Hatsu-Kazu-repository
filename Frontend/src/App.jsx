@@ -42,18 +42,18 @@ function App() {
             </div>
 
             <div className="title-section">
-              <h2 className="main-title">✨ 初音ちゃんの世界へようこそ ✨</h2>
-              <p className="subtitle">可愛さは無限大💫</p>
+              <h2 className="main-title">🌙 初音ちゃんの夢日記 🌙</h2>
+              <p className="subtitle">毎晩の素敵な夢の世界へ✨</p>
             </div>
 
             <div className="content">
               <p className="greeting">
-                ようこそ！初音ちゃんの特別な世界へ🌸
+                🌙 初音ちゃんの夢の世界へようこそ 🌙
               </p>
               <p className="message">
-                ここは初音ちゃんへの愛と応援で満ちた場所です。<br />
-                毎日が楽しく、毎瞬が輝いています。<br />
-                一緒に素敵な時間を過ごしましょう！
+                ここは初音ちゃんが毎晩見る素敵な夢が詰まった特別な日記帳です。<br />
+                キラキラした夢、ときめく冒険、温かい思い出…<br />
+                初音ちゃんの夢物語を一緒に応援しましょう！
               </p>
             </div>
 
@@ -61,24 +61,24 @@ function App() {
               className="love-button"
               onClick={() => setCount((count) => count + 1)}
             >
-              <span className="button-icon">💙</span>
-              初音ちゃんへの愛
+              <span className="button-icon">⭐</span>
+              夢を応援した数
               <span className="button-count">{count}</span>
-              <span className="button-icon">💙</span>
+              <span className="button-icon">⭐</span>
             </button>
 
             <div className="stats-container">
               <div className="stat-card">
                 <div className="stat-number">{count}</div>
-                <div className="stat-label">愛の数</div>
+                <div className="stat-label">応援数</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">∞</div>
-                <div className="stat-label">可愛さ</div>
+                <div className="stat-number">🌈</div>
+                <div className="stat-label">夢</div>
               </div>
               <div className="stat-card">
-                <div className="stat-number">✨</div>
-                <div className="stat-label">輝き</div>
+                <div className="stat-number">💫</div>
+                <div className="stat-label">希望</div>
               </div>
             </div>
           </section>
@@ -110,37 +110,37 @@ function App() {
 
               <div className="profile-info">
                 <h2 className="profile-name">初音ちゃん</h2>
-                <p className="profile-title">✨ 可愛さの象徴 ✨</p>
+                <p className="profile-title">🌙 夢日記の主人公 🌙</p>
 
                 <div className="profile-details">
                   <div className="detail-item">
-                    <span className="detail-icon">💖</span>
+                    <span className="detail-icon">💭</span>
                     <div className="detail-content">
-                      <p className="detail-label">特徴</p>
-                      <p className="detail-value">最高に可愛い笑顔</p>
+                      <p className="detail-label">最近の夢</p>
+                      <p className="detail-value">キラキラした光の中を歌う</p>
                     </div>
                   </div>
                   <div className="detail-item">
-                    <span className="detail-icon">🌟</span>
+                    <span className="detail-icon">🌈</span>
                     <div className="detail-content">
-                      <p className="detail-label">魅力</p>
-                      <p className="detail-value">見るたびに幸せになる</p>
+                      <p className="detail-label">夢の色</p>
+                      <p className="detail-value">青紫色の美しい世界</p>
                     </div>
                   </div>
                   <div className="detail-item">
-                    <span className="detail-icon">❄️</span>
+                    <span className="detail-icon">⭐</span>
                     <div className="detail-content">
-                      <p className="detail-label">季節</p>
-                      <p className="detail-value">冬の雪の中も素敵</p>
+                      <p className="detail-label">夢の想い</p>
+                      <p className="detail-value">みんなに笑顔をもたらしたい</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="profile-bio">
                   <p>
-                    初音ちゃんはこの世界で最も輝く笑顔を持つ人です。<br />
-                    見る者すべてを幸せにする力を持っています。<br />
-                    毎日が新しい発見と喜びで満ちています。
+                    初音ちゃんの夢日記へようこそ。<br />
+                    ここには毎晩、初音ちゃんが見た素敵な夢が記録されています。<br />
+                    その夢の数々があなたの心を温かく照らしますように。
                   </p>
                 </div>
 
@@ -148,7 +148,7 @@ function App() {
                   className="profile-btn"
                   onClick={() => setCount((count) => count + 1)}
                 >
-                  💓 応援する ({count})
+                  ⭐ 夢を応援する ({count})
                 </button>
               </div>
             </div>
@@ -157,7 +157,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>✨ 初音ちゃんへの愛と応援で溢れた場所 ✨</p>
+        <p>🌙 初音ちゃんの夢日記へようこそ 🌙</p>
       </footer>
     </div>
   )
